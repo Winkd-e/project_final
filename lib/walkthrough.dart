@@ -1,6 +1,5 @@
 import 'package:projects/login.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/gestures.dart';
 import 'signup.dart'; // Import the SignupPage
 
 class WalkthroughPage extends StatefulWidget {

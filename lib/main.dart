@@ -2,7 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
-import 'login.dart';
+import 'package:projects/Splashscreen.dart';
 
 
 Future<void> main() async {
@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
        title: 'OptiFood',
        theme: ThemeData(),
        debugShowCheckedModeBanner: false,
-       home: const SigninPage(),
+       home: const SplashScreen(),
     );
   }
 }
