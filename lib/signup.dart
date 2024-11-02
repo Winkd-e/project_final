@@ -38,7 +38,7 @@ class _SignupPageState extends State<SignupPage> {
           email: _emailController.text.trim(),
           password: _passwordController.text.trim(),
         );
-        addUserDetails(
+          addUserDetails(
           _firstNameController.text.trim(),
           _lastNameController.text.trim(),
           _emailController.text.trim(),

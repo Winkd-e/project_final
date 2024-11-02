@@ -27,6 +27,8 @@ class _SigninPageState extends State<SigninPage> {
     return null;
   }
 
+
+
   final formKey = GlobalKey<FormState>();
   Future signIn(BuildContext context, String text, String S) async {
     await FirebaseAuth.instance
