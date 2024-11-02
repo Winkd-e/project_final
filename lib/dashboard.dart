@@ -1,7 +1,7 @@
-import 'package:firstapp/grocerylistpage.dart';
-import 'package:firstapp/inventorypage.dart';
-import 'package:firstapp/login.dart';
-import 'package:firstapp/mealplannerpage.dart';
+import 'package:projects/grocerylistpage.dart';
+import 'package:projects/inventorypage.dart';
+import 'package:projects/login.dart';
+import 'package:projects/mealplannerpage.dart';
 import 'package:flutter/material.dart';
 import 'notifications.dart'; // Make sure to import the NotificationsPage
 
@@ -342,47 +342,13 @@ class _DashboardPage extends State<DashboardPage> {
                           },
                         ),
                         ListTile(
-                          leading: const Icon(Icons.report),
-                          title: const Text('Reports'),
-                          onTap: () {},
-                        ),
-                        ListTile(
-                          leading: const Icon(Icons.search),
-                          title: const Text('Search'),
-                          onTap: () {},
-                        ),
-                        const Divider(),
-                        const Padding(
-                          padding: EdgeInsets.symmetric(vertical: 8.0),
-                          child: Text(
-                            'Settings and Support',
-                            style: TextStyle(
-                              fontSize: 16,
-                              fontWeight: FontWeight.bold,
-                              color: Color(0xFF0B553E),
-                            ),
-                          ),
-                        ),
-                        ListTile(
-                          leading: const Icon(Icons.settings),
-                          title: const Text('Settings'),
-                          onTap: () {},
-                        ),
-                        ListTile(
-                          leading: const Icon(Icons.help),
-                          title: const Text('Help Center'),
-                          onTap: () {},
-                        ),
-                        ListTile(
                           leading: const Icon(Icons.logout),
-                          title: const Text('Logout'),
+                          title: const Text('Sign out'),
                           onTap: () {
-                            // Navigate to the LoginPage
+                            // Perform sign out action
                             Navigator.pushReplacement(
                               context,
-                              MaterialPageRoute(
-                                  builder: (context) =>
-                                      const LoginPage()), // Adjusted to navigate to LoginPage
+                              MaterialPageRoute(builder: (context) => const SigninPage()),
                             );
                           },
                         ),
@@ -394,81 +360,6 @@ class _DashboardPage extends State<DashboardPage> {
             ),
           ),
         ],
-      ),
-      bottomNavigationBar: BottomAppBar(
-        color: Colors.white,
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          children: [
-            GestureDetector(
-              onTap: () {
-                // Refresh DashboardPage for Home
-                Navigator.pushReplacement(
-                  context,
-                  MaterialPageRoute(builder: (context) => const DashboardPage()),
-                );
-              },
-              child: Column(
-                mainAxisSize: MainAxisSize.min,
-                children: [
-                  Image.asset('assets/home.png', height: 24), // Your image path
-                  const Text('Home', style: TextStyle(fontSize: 12)),
-                ],
-              ),
-            ),
-            GestureDetector(
-              onTap: () {
-                // Navigate to Inventory Page
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => InventoryPage()),
-                );
-              },
-              child: Column(
-                mainAxisSize: MainAxisSize.min,
-                children: [
-                  Image.asset('assets/inventory.png',
-                      height: 24), // Placeholder
-                  const Text('Inventory', style: TextStyle(fontSize: 12)),
-                ],
-              ),
-            ),
-            GestureDetector(
-              onTap: () {
-                // Navigate to Grocery List Page
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => GroceryListPage()),
-                );
-              },
-              child: Column(
-                mainAxisSize: MainAxisSize.min,
-                children: [
-                  Image.asset('assets/grocery_list.png',
-                      height: 24), // Placeholder
-                  const Text('Grocery List', style: TextStyle(fontSize: 12)),
-                ],
-              ),
-            ),
-            GestureDetector(
-              onTap: () {
-                // Navigate to Meal Planner Page
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => const MealPlannerPage()),
-                );
-              },
-              child: Column(
-                mainAxisSize: MainAxisSize.min,
-                children: [
-                  Image.asset('assets/meal_planner.png',
-                      height: 24), // Placeholder
-                  const Text('Meal Planner', style: TextStyle(fontSize: 12)),
-                ],
-              ),
-            ),
-          ],
-        ),
       ),
     );
   }

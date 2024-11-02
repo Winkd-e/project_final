@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:firstapp/dashboard.dart';
-import 'package:firstapp/grocerylistpage.dart';
-import 'package:firstapp/mealplannerpage.dart';
+import 'dashboard.dart';
+import 'grocerylistpage.dart';
+import 'mealplannerpage.dart';
 import 'package:intl/intl.dart';
 
 class InventoryPage extends StatefulWidget {

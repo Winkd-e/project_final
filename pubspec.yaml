@@ -39,6 +39,7 @@ dependencies:
   firebase_core: ^3.6.0
   firebase_auth: ^5.3.1
   firebase_ui_firestore: ^1.7.0
+  intl: ^0.19.0
 
 dev_dependencies:
   flutter_test:
@@ -64,6 +65,16 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   # assets:
+  assets:
+     - assets/walk1.png
+     - assets/walk2.png
+     - assets/walk3.png
+     - assets/logo.png
+     - assets/home.png
+     - assets/inventory.png
+     - assets/grocery_list.png
+     - assets/meal_planner.png
+     - assets/profile_menu.png
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
 

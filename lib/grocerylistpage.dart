@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
-import 'package:firstapp/dashboard.dart';
-import 'package:firstapp/inventorypage.dart';
-import 'package:firstapp/mealplannerpage.dart';
+import 'package:projects/dashboard.dart';
+import 'package:projects/inventorypage.dart';
+import 'package:projects/mealplannerpage.dart';
 
 class GroceryListPage extends StatefulWidget {
   const GroceryListPage({super.key});

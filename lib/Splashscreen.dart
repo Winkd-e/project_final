@@ -1,5 +1,5 @@
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:firstapp/login.dart';
+import 'package:projects/login.dart';
 import 'package:flutter/material.dart';
 import 'dashboard.dart';
 import 'walkthrough.dart'; // Import the WalkthroughPage
@@ -58,7 +58,7 @@ Widget build(BuildContext context) {
           return DashboardPage();
         } else {
           // If no user is logged in, show the main login page
-          return LoginPage();
+          return SigninPage();
         }
         },
       ),

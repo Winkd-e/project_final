@@ -1,7 +1,7 @@
 import 'dart:async';
 
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:firstapp/login.dart';
+import 'package:projects/login.dart';
 import 'package:flutter/material.dart';
 
 class VerifyScreen extends StatefulWidget {
@@ -49,7 +49,7 @@ class _VerifyScreenState extends State<VerifyScreen> {
       timer.cancel();
       // ignore: use_build_context_synchronously
       Navigator.of(context).pushReplacement(
-          MaterialPageRoute(builder: (context) => const LoginPage()));
+          MaterialPageRoute(builder: (context) => const SigninPage()));
     }
   }
 }
