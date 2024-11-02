@@ -38,7 +38,7 @@ class _SignupPageState extends State<SignupPage> {
           email: _emailController.text.trim(),
           password: _passwordController.text.trim(),
         );
-        await addUserDetails(
+        addUserDetails(
           _firstNameController.text.trim(),
           _lastNameController.text.trim(),
           _emailController.text.trim(),
@@ -65,7 +65,7 @@ class _SignupPageState extends State<SignupPage> {
     String email,
     String householdName,
   ) async {
-    await FirebaseFirestore.instance.collection('household_users').add({
+    await FirebaseFirestore.instance.collection('householduser').add({
       'firstName': firstName,
       'lastName': lastName,
       'email': email,
@@ -74,8 +74,12 @@ class _SignupPageState extends State<SignupPage> {
   }
 
   bool passwordConfirmed() {
-    return _passwordController.text.trim() ==
-        _confirmedPasswordController.text.trim();
+    if (_passwordController.text.trim() ==
+        _confirmedPasswordController.text.trim()) {
+      return true;
+    } else {
+      return false;
+    }
   }
 
   @override
