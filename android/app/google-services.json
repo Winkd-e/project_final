@@ -1,13 +1,14 @@
 {
   "project_info": {
-    "project_number": "752036526079",
-    "project_id": "optifood-dced9",
-    "storage_bucket": "optifood-dced9.firebasestorage.app"
+    "project_number": "1019133485649",
+    "firebase_url": "https://fir-e42bb-default-rtdb.firebaseio.com",
+    "project_id": "fir-e42bb",
+    "storage_bucket": "fir-e42bb.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:752036526079:android:3cbdb12dd167a3b94c19ca",
+        "mobilesdk_app_id": "1:1019133485649:android:b78cd706e0b84a5ccc0e70",
         "android_client_info": {
           "package_name": "com.example.firstapp"
         }
@@ -15,7 +16,26 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyCMGckuj8XE28wC7wYKPB3QHsR_4T7gKa0"
+          "current_key": "AIzaSyDMA1n7qTGHYbYDSisqIEoFkjqtJ8L5KSM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1019133485649:android:a83fe367a4861358cc0e70",
+        "android_client_info": {
+          "package_name": "com.example.projects"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDMA1n7qTGHYbYDSisqIEoFkjqtJ8L5KSM"
         }
       ],
       "services": {
